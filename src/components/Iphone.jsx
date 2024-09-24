@@ -3,7 +3,7 @@ import { useGLTF, useTexture } from "@react-three/drei";
 import * as THREE from "three";
 
 function Iphone(props) {
-  const { nodes, materials } = useGLTF("/models/scene.glb");
+  const { nodes, materials } = useGLTF("/Apple-clone/models/scene.glb");
 
   const texture = useTexture(props.item.img);
   useEffect(() => {
@@ -248,4 +248,4 @@ function Iphone(props) {
 
 export default Iphone;
 
-useGLTF.preload("/models/scene.glb");
+useGLTF.preload("/Apple-clone/models/scene.glb");
